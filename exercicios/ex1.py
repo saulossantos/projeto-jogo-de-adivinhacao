@@ -31,22 +31,17 @@ class ContaCorrente:
             print("Valor inválido para saque.")
 
 
-# Criando uma instância da classe ContaCorrente
-conta = ContaCorrente("ContaCor1234", "João da Silva")
+conta = ContaCorrente("123321-3", "Carla Costa")
 
-# Exibindo os atributos da conta
 print("Número da conta:", conta.numero_conta)
 print("Nome do correntista:", conta.nome_correntista)
 print("Saldo:", conta.saldo)
 
-# Alterando o nome do correntista
-conta.alterar_nome("João Oliveira")
+conta.alterar_nome("Carla Santos")
 print("Novo nome do correntista:", conta.nome_correntista)
 
-# Realizando um depósito
 conta.deposito(1000)
 print("Saldo após depósito:", conta.saldo)
 
-# Realizando um saque
 conta.saque(500)
 print("Saldo após saque:", conta.saldo)
